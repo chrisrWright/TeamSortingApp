@@ -55,11 +55,7 @@ h1 {
   width: 50%;
 }
 
-li{
-  list-style: none;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
+
 
 .card {
   padding: 2rem;

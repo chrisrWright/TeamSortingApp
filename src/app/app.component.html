@@ -25,8 +25,22 @@
       />
       <button (click)="generateTeams()">Generate</button>
     </div>
+
     <p *ngIf="errorMsg" class="error-msg">
       {{ errorMsg }}
     </p>
+
   </div>
+
+
+  <div class="teams-container">
+    <app-team
+      *ngFor="let team of teams; let i = index"
+      [team]="team"
+      [index]="i"
+    >
+    </app-team>
+
+</div>
+
 </div>
