@@ -33,7 +33,9 @@
   </div>
 
 
-  <div class="teams-container">
+  <div *ngIf="teams.length" class="team-container">
+
+
     <app-team
       *ngFor="let team of teams; let i = index"
       [team]="team"
